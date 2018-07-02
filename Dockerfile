@@ -1,2 +1,2 @@
 FROM nginx
-COPY nginx_tp /usr/share/nginx/html
+COPY nginx_tp-new /usr/share/nginx/html
