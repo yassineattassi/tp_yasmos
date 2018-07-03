@@ -1,17 +1,15 @@
 version: '3'
 
 services:
- nginx:
-   image: nginx
+ master:
+   image: mahichem/repotpdevops:lydec2
    volumes:
      - .:/usr/share/
    ports:
      - "8080:80"
- nginx2:
-   image: nginx
+ slave:
+   image: mahichem/repotpdevops:lydec2
    volumes:
      - .:/usr/share/
    ports:
      - "9001:80"
- redis:
-   image: redis
